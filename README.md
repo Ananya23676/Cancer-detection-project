@@ -1,10 +1,10 @@
-1. Introduction
+1. Introduction: 
 Breast cancer is one of the most common and life-threatening diseases among women worldwide. Early detection significantly increases survival rates. This project uses machine-learning techniques to classify breast tumors as either malignant (cancerous) or benign (non-cancerous).
 The goal is to build a system that can assist medical professionals by analyzing clinical measurements and providing fast, accurate predictions.
 The project utilizes the Breast Cancer Wisconsin Diagnostic Dataset, which includes numerical features describing tumor characteristics such as radius, texture, perimeter, smoothness, and concavity. Two machine-learning approaches are used:
 1.	K-Means Clustering – to explore natural grouping patterns without labels
 2.	K-Nearest Neighbors (KNN) – a supervised model for actual classification
-2. Data Preprocessing
+2. Data Preprocessing :
 Data preprocessing is crucial for building a high-performing machine-learning model. This stage transforms raw data into a clean, standardized, and machine-readable format.
 2.1 Loading and Inspecting the Dataset
 The dataset is imported using Pandas. Basic functions such as .head(), .info(), and .describe() are typically used to understand:
@@ -45,7 +45,7 @@ The dataset is divided into:
 •	Testing set – used to evaluate model generalization
 This prevents overfitting and ensures that model performance is measured realistically.
 
-3. Model Development and Hyperparameter Configuration
+3. Model Development and Hyperparameter Configuration:
 3.1 K-Means Clustering (Unsupervised Learning)
 K-Means attempts to group data points into clusters based on similarity.
 Configuration used in this project:
@@ -71,7 +71,7 @@ How KNN Works
 1.	The model stores all training data.
 2.	For any new sample, it finds the k nearest neighbors using distance.
 3.	The class label is decided by majority vote among neighbors.
-4. Model Evaluation
+4. Model Evaluation:
 Evaluation measures the effectiveness of the trained models. Your notebook performs evaluation on both K-Means and KNN.
 4.1 Evaluation of K-Means
 Since K-Means is unsupervised, it does not use labels during training.
@@ -82,6 +82,6 @@ Shows the number of:
 •	True Negative clusters
 •	Misclustered samples
 KNN is evaluated on the test dataset using the following metrics:
-5. Conclusion
+5. Conclusion:
 This project successfully demonstrates the use of machine-learning techniques for breast cancer detection.By applying well-structured preprocessing, selecting appropriate models, and evaluating them using meaningful metrics, the system provides accurate predictions that can assist in medical diagnosis.
 
